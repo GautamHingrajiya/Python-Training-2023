@@ -39,7 +39,7 @@ dt:22-06-2023
 
 
 for i in range(1,6):
-    num=0
+
     num = int(input("enter number"))
         
     if num % 2 == 0:

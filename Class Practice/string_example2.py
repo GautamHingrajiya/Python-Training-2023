@@ -14,4 +14,4 @@ print("Last Character : ", technology[-1])
 
 # get middle string
 
-print("Three to Five Character : ", technology[:5])
+print("Three to Five Character : ", technology[3:5])

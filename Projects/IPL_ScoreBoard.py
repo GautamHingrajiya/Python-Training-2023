@@ -157,9 +157,9 @@ while status:
                 print("\n======================  Final Score  =============================================\n")
                 
                 print(computer_score,"/",computer_wicket)
-                    
+        
 
-            
+
         
         else:
             print("Computer Won Toss !!!")

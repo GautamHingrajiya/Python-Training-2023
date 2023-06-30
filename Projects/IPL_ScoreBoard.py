@@ -155,43 +155,52 @@ while status:
             if computer_play == "BATTING":
                 my_play = "BOWLING"
                 print("\n======================  Press Enter for BOWLING  =============================================\n")
-                for i in range(1,7):
+                i=1
+                while i<=6 :
+
                     auto_run = random.choice(run_list)
                     input("PRESS ENTER NEXT")
 
                     if auto_run =="1":
                         computer_score+=1
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="2":
                         computer_score+=2
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="3":
                         computer_score+=3
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="4":
                         computer_score+=4
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="6":
                         computer_score+=6
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="NO BOWL":
                         computer_score+=1
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
-                        i-=1
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        
                     elif auto_run =="WIDE BOWL":
                         computer_score+=1
                         computer_wicket+=0
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="WICKET":
                         computer_score+=1
                         computer_wicket+=1
-                        print("Score : ", computer_score ,"/",computer_wicket,(i/10))
+                        print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                 input("PRESS ENTER TO SHOW FINAL SCORE")
                 print("\n======================  Final Score  =============================================\n")
                 
@@ -199,7 +208,10 @@ while status:
             else:
                 print("\n======================  Press Enter for BATTING  =============================================\n")
                 my_play = "BATTING"
-                for i in range(1,7):
+
+                i=1
+                while i<=6 :
+                    
                     auto_run = random.choice(run_list)
                     input("PRESS ENTER NEXT")
 
@@ -207,31 +219,37 @@ while status:
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="2":
                         my_score+=2
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="3":
                         my_score+=3
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="4":
                         my_score+=4
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="6":
                         my_score+=6
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="NO BOWL":
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
-                        i-=1
+                        
                     elif auto_run =="WIDE BOWL":
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="WICKET":
                         my_score+=1
                         my_wicket+=1
@@ -247,7 +265,8 @@ while status:
         if my_play == "1" or my_play == "BATTING":
 
             print("\n======================  Press Enter for BOWLING  =============================================\n")
-            for i in range(1,7):
+            i=1
+            while i<=6 :
                     auto_run = random.choice(run_list)
                     input("PRESS ENTER NEXT")
 
@@ -255,35 +274,42 @@ while status:
                         computer_score+=1
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="2":
                         computer_score+=2
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="3":
                         computer_score+=3
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="4":
                         computer_score+=4
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="6":
                         computer_score+=6
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="NO BOWL":
                         computer_score+=1
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
-                        i-=1
+                
                     elif auto_run =="WIDE BOWL":
                         computer_score+=1
                         computer_wicket+=0
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="WICKET":
                         computer_score+=1
                         computer_wicket+=1
                         print("Score : ", computer_score ,"/",computer_wicket,"Ball : ",(i/10))
+                        i+=1
                 
             input("PRESS ENTER TO SHOW FINAL SCORE")
             print("\n======================  Final Score  =============================================\n")
@@ -293,7 +319,9 @@ while status:
         else :
                 print("\n======================  Press Enter for BATTING  =============================================\n")
 
-                for i in range(1,7):
+                i=1
+                while i <= 1 :
+                    
                     auto_run = random.choice(run_list)
                     input("PRESS ENTER TO NEXT")
 
@@ -301,35 +329,42 @@ while status:
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="2":
                         my_score+=2
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="3":
                         my_score+=3
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="4":
                         my_score+=4
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="6":
                         my_score+=6
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="NO BOWL":
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
-                        i-=1
+
                     elif auto_run =="WIDE BOWL":
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                     elif auto_run =="WICKET":
                         my_score+=1
                         my_wicket+=1
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
+                        i+=1
                 input("PRESS ENTER TO SHOW FINAL SCORE")
                 print("\n======================  Final Score  =============================================\n")
                 

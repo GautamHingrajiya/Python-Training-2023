@@ -22,7 +22,7 @@ U_Score = 0
 
 while status:
     
-    U_Choce = input("Enter Your Choice").upper()
+    U_Choce = input("Enter Your Choice : ").upper()
     C_Choice = random.choice(Game_list)
     
     print("COMPUTER SELECTED : ",C_Choice )

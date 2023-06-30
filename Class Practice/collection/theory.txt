@@ -14,3 +14,5 @@ There are 4 types of collection
         E.g 
         l1 = [ ] # 1st way to create list
         l2 = list()  #2nd way to create list
+
+2)  tuple :

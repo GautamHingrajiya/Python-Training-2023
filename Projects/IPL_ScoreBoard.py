@@ -335,7 +335,7 @@ while status:
                 print("\n======================  Press Enter for BATTING  =============================================\n")
 
                 i=1
-                while i <= 1 :
+                while i <= 6 :
                     
                     auto_run = random.choice(run_list)
                     input("PRESS ENTER TO NEXT")

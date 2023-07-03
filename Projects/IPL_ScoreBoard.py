@@ -385,6 +385,7 @@ while status:
 
         print("My Team Score :",my_score,"/",my_wicket)
         print("Computer Team Score :",computer_score,"/",computer_wicket)
+        input()
 
         print("\n ******************************************************************************\n")
         if my_score > computer_score:
@@ -393,7 +394,8 @@ while status:
             print("Computer Won Match !!!")
     else: 
         print("Please Enter valid Input: HEAD/TAILS")    
-        
+    print("\n ******************************************************************************\n")
+    input()    
     check = input("\n Do you want to Play Again ??? \n press y for Yes or n for No :").upper()
     if check == "N":
         status = False

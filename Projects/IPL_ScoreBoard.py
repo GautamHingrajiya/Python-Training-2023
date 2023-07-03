@@ -26,8 +26,6 @@ computer_score = 0
 computer_wicket = 0
 my_play = 0
 
-
-
 while status:
 
     my_team = int(input("Please Select Your Team by Entering Number 1 to 10 :"))
@@ -157,10 +155,7 @@ while status:
                 print("\n======================  Final Score  =============================================\n")
                 
                 print(computer_score,"/",computer_wicket)
-        
-
-
-        
+            
         else:
             print("Computer Won Toss !!!")
             input("\n======================  TIme to Select BATTING/BOWLING  =============================================\n")
@@ -274,7 +269,6 @@ while status:
                 
                 print(my_score,"/",my_wicket)
 
-
         print("\n ########################################  NOW FOR SECOND TEAM  ###############################################\n")
         
         if my_play == "1" or my_play == "BATTING":
@@ -384,8 +378,7 @@ while status:
                 print("\n======================  Final Score  =============================================\n")
                 
                 print(my_score,"/",my_wicket)
-                
-            
+                            
         print("\n **********************************  Result Time  ********************************************\n")
         input("Press Enter To Show Result")
 
@@ -401,8 +394,6 @@ while status:
     else: 
         print("Please Enter valid Input: HEAD/TAILS")    
         
-
-
     check = input("\n Do you want to Play Again ??? \n press y for Yes or n for No :").upper()
     if check == "N":
         status = False

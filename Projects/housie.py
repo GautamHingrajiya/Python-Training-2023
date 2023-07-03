@@ -40,30 +40,31 @@ print("COMPUTER NUMBER : \t",c_print)
 print("\n =================================================================================================\n")
 input()
 
+
 for i in range(1,12):
     magic_num1=m_list
     magic_num =random.choice(magic_num1)
-    print("\t\t MAGIC NUMBER :",magic_num)
+    print("\n\t\t MAGIC NUMBER :",magic_num,"\n")
     magic_num1.remove(magic_num)
 
     if magic_num in u_list:
-        if len(u_list) == "0":
-            
+        u_list.remove(magic_num)
+        input()
+        u_print = '    '.join(str(item) for item in u_list)
+        print("USER NUMBER : \t\t" ,u_print)
+        c_print = '    '.join(str(item) for item in c_list)
+        print("COMPUTER NUMBER : \t",c_print)
+        if len(u_list)  == 0:
             print("USER WON !!!")
-        else:
-            u_list.remove(magic_num)
-            u_print = '    '.join(str(item) for item in u_list)
-            print("USER NUMBER : \t\t" ,u_print)
-            c_print = '    '.join(str(item) for item in c_list)
-            print("COMPUTER NUMBER : \t",c_print) 
-            input()
-    else :
-        if len(c_list) == "0":
+            break
+    else:   
+        c_list.remove(magic_num)    
+        input()
+        u_print = '    '.join(str(item) for item in u_list)
+        print("USER NUMBER : \t\t" ,u_print)
+        c_print = '    '.join(str(item) for item in c_list)
+        print("COMPUTER NUMBER : \t",c_print)
+    
+        if len(c_list)  == 0:
             print("COMPUTER WON !!!")
-        else:
-            c_list.remove(magic_num)
-            u_print = '    '.join(str(item) for item in u_list)
-            print("USER NUMBER : \t\t" ,u_print)
-            c_print = '    '.join(str(item) for item in c_list)
-            print("COMPUTER NUMBER : \t",c_print) 
-            input()
+            break

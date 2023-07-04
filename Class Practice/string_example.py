@@ -1,5 +1,5 @@
 """
-one or more characters written in a double os single quotes ots called string
+one or more characters written in a double or single quotes called string
 
 string : which is contain multiple charachters
 

@@ -16,12 +16,12 @@
 l1= [10,20,30,40,50]
 l2= ["python", "java", "php","android"]
  
-l1.pop()    # remove last element from the list = 50
+l1.pop()    # remove last element(50) from the list 
 print(l1)
 
-l2.pop()    # remove last element from the list = "android"
+l2.pop()    # remove last element(android) from the list = "android"
 print(l2)
 
 list1 =[ 2, 33, 222, 14, 25 ]
-print(list1[-1])    # last element of list
+print(list1[-1])    # last element(25) of list
 

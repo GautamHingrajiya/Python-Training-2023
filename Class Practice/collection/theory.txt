@@ -15,4 +15,75 @@ There are 4 types of collection
         l1 = [ ] # 1st way to create list
         l2 = list()  #2nd way to create list
 
+
+    # add some values in list 
+    # list index always start from 0 index
+
+    there are 3 ways to add data in existing list
+
+        1) append() : to store data in existing list
+        2) extend() : to add more then 1 value in list
+        3) insert() : to store element in list at specific position
+
+        # 1) append() : to store data in existing list
+
+            for i in range(1,4):
+                name = input("Enter Your Subject :")
+                l1.append(name)
+            print(l1)   
+
+        # 2) extend() : to add more then 1 value in list
+
+
+            l1.extend(["react","node","javascript"])
+            print(l1)
+
+
+        # 3) insert() : to store element in list at specific position
+        
+            l1.insert(1,"python programing")
+            print(l1)
+        
+    there are 3 ways to remove element from the list
+
+        1) remove() : using remove element from list value wise
+        2) pop() : using pop we can remove last element of the list and we can pop(index) specific index value
+        3) clear() : using clear we can remve all the elements from list
+        4) del : del is keyword using of del keyword we can delete list from memory
+
+
 2)  tuple :
+
+    # diff between list and tuple
+ 
+    ==> list and tuple is a collection data type which is contain similar and dis-similar data elements.
+        list is represent by [] breces or tuple is represent by () breces
+ 
+    ==>list which is mutable when tuple is a immutable 
+
+    ==>list is slower then tuple 
+
+3) set : set is a collection data type
+
+    # set which is immutable,unorderable,unindexable
+    # set does not contain duplicate element
+    # set which is represent by {} breces
+
+4) dictionary : which is collection data type 
+                which is repesent by {} breces
+                dictionary which is contain key and value in a pair
+
+            E.g
+
+            student={
+            key : value,
+            key : value,
+            key : value,
+             .
+             .
+             .
+             .
+             .
+            }
+
+

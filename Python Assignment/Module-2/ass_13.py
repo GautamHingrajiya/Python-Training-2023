@@ -6,4 +6,4 @@ a=set(name1)
 for i in a:
     print(i,":",name1.count(i))
     count+=1
-print("Given Name lenght is",len(name1),"Character and Has",count,"Different Characters")
+print("\nGiven Name lenght is",len(name1),"Character and Has",count,"Different Characters")

@@ -2,11 +2,8 @@
 
 
 list1 = []
-print(len(list1))
-list1.append("hello")
 
-if len(list1) == 0:
-    print(" list is empty ")
+if len(list1) ==0:
+    print ("List is Empty")
 else:
-    print("list length :",len(list1))
-
+    print("List is not Empty")

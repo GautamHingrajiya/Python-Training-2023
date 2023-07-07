@@ -2,11 +2,8 @@
  
 num1 = int( input ("Enter Number 1: "))
 num2 = int( input ("Enter Number 2: "))
-status=True
 
-if num1 == num2 :
-    status = True
-else : 
-    status = False
-    
-print(status)
+
+print("Have Same Value : ",num1==num2)
+print("Sum Difference is 5 : ",num1+num2 ==5 )
+print ("Difference is 5 : ",num1 - num2 == 5)

@@ -18,9 +18,7 @@ user_list= {                                    # Created User Collection
     1 : "Manager",
     2 : "Customer"
 }
-fruit={
-
-}
+fruit={}
                                            
 role = int(input("Select your Role (1/2) : "))  # Taking User Role 
 # print(f"\nYou are : {user_list.get(role)}\n")      # Printing User Selection  
@@ -31,18 +29,13 @@ if role == 1 :
         status = True
         while status:
             fruit_name = input("Enter Fruit Name : ")
-            fruit_name = {}
-            fruit_qty = int(input("Enter Fruit Qty : ")) 
-            fruit[fruit_name]["Qty"] = fruit_qty
-            fruit_price = int(input("Enter Fruit Price : "))
-            fruit[fruit_name]["price"] = fruit_price
-                      
+            fruit['fruit_name'] = fruit_name
+            # fruit_qty = int(input("Enter Qty : "))
+            # fruit['fruit_name']['fruit_qty'] = fruit_qty
+            # fruit_price = float(input("Enter Price : "))
+            # fruit['fruit_name']["price"] = fruit_price
             
             
-            
-            # fruit_name[fruit_qty] = fruit_qty
-            # fruit_name[fruit_price] = fruit_price 
-
 
                                 
             add_more = input("Want to Add More Items (y/n) : ").upper()
@@ -55,6 +48,22 @@ if role == 1 :
        
     elif m_role == 2:
           print(fruit)
-          
-    elif m_role == 3:
-          pass
+else :
+    status = True
+    while status:
+        print(fruit)
+        input("Select Buy Using Number : ")
+        input(int("Enter Qty"))
+        
+        
+
+
+        add_more = input("Want to Add More Items (y/n) : ").upper()
+        if add_more == "Y" or add_more == "YES":
+            continue
+        else:
+            status =False
+            break  
+
+
+

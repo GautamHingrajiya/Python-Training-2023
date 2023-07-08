@@ -12,5 +12,5 @@ print(type(list1))
 print("\n ======================== \n")
 for a in list1:
     str1=str1+a
-print(str1, end="")
+print(str1, sep=(" "), end=" ")
 print(type(str1))

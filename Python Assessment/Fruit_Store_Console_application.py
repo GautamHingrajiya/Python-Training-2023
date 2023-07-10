@@ -90,7 +90,7 @@ while status :
     
     
     
-    elif role == 2:
+    elif role == 2: 
         
         print("\n = = = = = = = = = = = = = = = = = = =  WELCOME TO FRUIT STORE = = = = = = = = = = = = = = = = = = = \n")      # Customer Welcome Message
         c_status = True
@@ -108,7 +108,7 @@ while status :
 
                 if order_qty <= products[order_item]['qty']:    # Check Order Qty Is according to Scock Data
                     
-                    item_total =order_qty *products[order_item]['qty']  # Displai Item Total 
+                    item_total =order_qty * products[order_item]['price']  # Displai Item Total 
                     print("Item Total : ", item_total)
 
                     products[order_item]['qty'] -= order_qty            # Update Qty to Stock Data
@@ -129,14 +129,12 @@ while status :
             else : 
                 c_status = False
 
-            print("\n = = = = = = = = = = = = = = = = = = =  Order Summary = = = = = = = = = = = = = = = = = = = \n")
-            for k,v in order.items():
-                print(f"Item : {k} \tQty : {v['qty']} Rs. : {v['price']}")      # Printing Order Summery
-            
-            print("=============\t\t TOTAL BILL AMT : ",total_bill,"\t\t============")      # Printting Total Bill Amt Of Cust Order
-
-
-
+        print("\n = = = = = = = = = = = = = = = = = = =  Order Summary = = = = = = = = = = = = = = = = = = = \n")
+        for k,v in order.items():
+            print(f"Item : {k} \tQty : {v['qty']} \tRs. : {v['price']}")      # Printing Order Summery
+        print("============= \t TOTAL BILL AMT : ",total_bill,"\t ============")      # Printting Total Bill Amt Of Cust Order
+    else:
+        print("Enter Valid Input")
 
     check = input("Exit (y/n) : ").upper()          # Check Want to Repet 
     if check == "Y":

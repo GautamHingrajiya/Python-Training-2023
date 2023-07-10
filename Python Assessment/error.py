@@ -63,7 +63,6 @@ while status:
                     update_product_price = int(input("Enter update price"))
                     
                     if product_name in product :
-                        old_qty = product[product_name]['qty']
                         sub_dic['qty'] = update_product_qty
                         sub_dic['price'] = update_product_price
                     else:

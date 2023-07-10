@@ -1,16 +1,21 @@
 # Write a Python program to convert a list of characters into a string.
 
 list1=[]
-str1=""
-n= int(input("Enter How Many Items Want to add in List :"))
+str1 = ""
+status = True
+while status:
 
-for i in range(0,n):
-    list1.append(input("Enter Item Name :"))
+    a=input("Enter Item :")
+    check = input("Want to addd More Item (y/n): ").upper()
+    list1.append(a)
+    if check == "Y" :
+        status = True
+    else :
+        status = False
 
-print(list1) # print list which was creat by taking user input
+print(list1)
 print(type(list1))
-print("\n ======================== \n")
-for a in list1:
-    str1=str1+a
-print(str1, sep=(" "), end=" ")
-print(type(str1))
+
+for i in list1:
+    str1 += i
+print(str1)

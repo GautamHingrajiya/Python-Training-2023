@@ -87,9 +87,7 @@ while status :
                 main_m_status = True
             else : 
                 main_m_status = False
-    
-    
-    
+        
     elif role == 2: 
         
         print("\n = = = = = = = = = = = = = = = = = = =  WELCOME TO FRUIT STORE = = = = = = = = = = = = = = = = = = = \n")      # Customer Welcome Message

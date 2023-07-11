@@ -1,0 +1,49 @@
+function : function is a block of code that code are used to again and again
+
+        -> using of function we can reduce code and save time
+        -> we can call code multipul times
+
+        # there are 2 types of function
+
+        1) built-in function
+        2) user defined function
+    
+    1) built-in function 
+
+    -> which is predefined by python
+        e.g. print(), input() ....
+    
+    2) user defined function
+
+    -> a function which is defined by user
+
+        # there are 2 types to create user defined function
+
+        1) function declaration or defination
+        2) function calling
+
+    1) function declaration or defination :
+
+        def <fun name>():
+            statement
+            // block of code
+
+
+# function categories :
+
+1) function without parameter and function without return types
+    def funname():
+        statement
+
+2) function with parameter and function without return types
+    def funname(parameter):
+        statement
+
+3) function without parameter and function with return types
+    def funname():
+        return statement
+
+4) function with parameter and function with return types
+    def funname(parameter):
+        return statement
+

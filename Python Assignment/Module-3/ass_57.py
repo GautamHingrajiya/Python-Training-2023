@@ -3,8 +3,8 @@
 import random
 
 # Set the seed value
-random.seed(12)
+random.seed(13)
 
-# Generate random numbers
-random_number = random.randint(1,100,10)
-random_number
+# Generate random numbers same for seed value 12
+random_number = random.randint(1,100)
+print(random_number)

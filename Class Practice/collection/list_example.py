@@ -18,3 +18,9 @@ print("sum of table :",sum(l2)) # print sum of table
 
 l2.reverse() # reverse list 
 print(l2)
+
+
+l3 = [10,20,30,["apple","banana","pinapple"]]
+print(type(l3))
+print(l3)
+print(l3[3][2][1])

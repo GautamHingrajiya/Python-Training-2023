@@ -6,9 +6,6 @@ welcome = """
                                                 2) FACULTY
 
                                                 3) STUDENT
-
-
-
 """
 
 counsellor_display = """
@@ -22,8 +19,6 @@ counsellor_display = """
                                                 3) VIWE ALL STUDENT
 
                                                 4) VIWE SPECIFIC STUDEN
-
-
 """
 
 faculty_display = """
@@ -33,149 +28,106 @@ faculty_display = """
                                                 1) ADD MARKS TO STUDENT
 
                                                 2) VIWE ALL STUDENT
-
 """
 
 student_display = """
 
                                                 WELCOME STUDENT
-
 """
 
-def consellor ():
-    global sub_student
-    global main_student
-    global sub_student_sub
 
-    c_role = int(input("Select Your Role by Entering Number : "))
+def faculty():
+    pass
+def student():
+    pass
 
-    if c_role == 1:
-        a_status = True
-        while a_status:
-                
-            student_roll_no = int(input("Enter Roll No : "))
-            Student_firstname = input("Enter First Name : ").upper()
-            Student_lastname = input("Enter Last Name : ").upper()
-            Student_contact_no = int(input("Enter Contact No : "))
-            Student_subject = input("Enter Subject Name : ").upper()
-            Student_marks = int(input("Enter Marks : "))
-            Student_fees = int(input("Enter Fees : "))
-
-
-            sub_student_sub ['marks'] = Student_marks
-            sub_student_sub ['fees'] = Student_fees
-            sub_student['firstname'] = Student_firstname
-            sub_student['lastname'] = Student_lastname
-            sub_student['contactno'] = Student_contact_no
-            
-            sub_student[Student_subject] = sub_student_sub
-            main_student[student_roll_no]=sub_student
-
-            check = input("Add More (y/n) : ").upper()
-            if check == "Y":
-                a_status = True
-            elif check == "N":
-                a_status = False
-            else:
-                print("Enter Valid Input ") 
-
-        print(main_student)
-    
-    elif c_role == 2:
-        d_status = True
-        while d_status:
-            student_roll_no = int(input("Enter Roll No : "))
-            
-            if student_roll_no in main_student:
-
-                main_student.pop(student_roll_no)
-
-            else: 
-                print(" Enter Valid Roll No. ")    
-            check = input("Delete More (y/n) : ").upper()
-            if check == "Y":
-                d_status = True
-            elif check == "N":
-                d_status = False
-            else:
-                print("Enter Valid Input ")
-        print(main_student)
-
-
-    elif c_role == 3:
-        pass
-    elif c_role == 4:
-        pass
-
-
-
-
-
-
-    
-
-def faculty ():
-    f_role = int(input("Select Your Role by Entering Number : "))
-    rollnm = int(input("Enter Roll Number : "))
-    if f_role == 1:
-        if rollnm in main_student:
-            Student_subject = input("Enter Subject Name :").upper()
-            if Student_subject in sub_student:
-                Student_marks = int(input("Enter Marks : "))
-                sub_student_sub ['marks'] = Student_marks
-                sub_student[Student_subject] = sub_student_sub
-            else:
-                print("Subject Not Available Press Enter to Add Subject")
-                Student_subject = input("Enter Subject Name : ").upper()
-                Student_marks = int(input("Enter Marks : "))
-                sub_student_sub ['marks'] = Student_marks
-                sub_student[Student_subject] = sub_student_sub
-            print(main_student)
-            
-                
-        else: 
-            print("Enter Roll no in not Available")
-        
-    elif f_role ==2:
-        pass
-    else:
-        print("Enter Valid Input ")
-def student ():
-    for f,l in main_student:
-        print(f"Roll No. {f} \tFirst Namme : {l['firstname']} \tlast Name : {l['lastname']} ")
-
-
-
-
-
-main_student = {}
-sub_student = {}
-sub_student_sub = {}
 status = True
-while status:
-
+while status :
     print(welcome)
+    role = int(input("Select Role By Entering Role : "))
+    student_main = {}
+    student_details = {}
+    match role:
 
-    role = int(input("Select Your Role by Entering Number : "))
-    if role == 1:
-        print(counsellor_display)
-        
-        consellor()
-        
+        case 1:
+            counsellor_status = True
+            while counsellor_status : 
+                print(counsellor_display)
+                counsellor_role = int(input("Select Operation : "))
+                
+                if counsellor_role == 1:
 
-    elif role == 2:
-        print(faculty_display)
-        
-        faculty ()
+                    rollno = int(input("Enter Roll No. : "))
 
-    
-    elif role == 3:
-        print(student_display)
+                    if rollno in student_main:
+                        print("Entered Roll No. Already Exixst ")
+                    else:
+                        
+                        print("Entered Roll No. not Exixst ")
+                        
+                        
+                        fname = input("Enter First Name : ").upper()
+                        lname = input("Enter Last Name : ").upper()
+                        contactno = int(input("Enter Contact No. : "))
+                        facultyname = input("Enter Faculty Name : ").upper()
+                        student_details['fname'] = fname
+                        student_details['lname'] = lname
+                        student_details['contact'] = contactno
+                        student_details['faculty'] = facultyname
 
-        student ()
+                        add_subject = True
+                        while add_subject:
 
-    else:
-        print("Enter Valid Input : ")
+                            student_marks = {}
+                            student_subject = {}
+                            
+                            subject = input("Enter Subject Name : ").upper()
+                            marks = int(input("Enter Marks : "))
+                            fees = int(input("Enter Fees : "))
+
+                            
+                            
+                            check = input("Add More Subject (y/n) : ").upper()
+                            if check == "Y":
+                                add_subject = True
+                            elif check == "N":
+                                add_subject = False
+                            else:
+                                print("Enter Valid Input")
+
+                        student_marks['marks'] = marks
+                        student_marks ['fees'] = fees
+                        student_subject [subject] = student_marks
+                        student_details['subject'] = student_subject
+                        student_main[rollno] = student_details
+
+                    
+                    print(student_main)
+                elif counsellor_role == 2:
+                    pass
+                elif counsellor_role == 3:
+                    pass
+                elif counsellor_role == 4: 
+                    pass
+                else :
+                    print("Enter Valid Input")
+
+                check = input("Perform More Operaion (y/n) : ").upper()
+                if check == "Y":
+                    counsellor_status = True
+                elif check == "N":
+                    counsellor_status = False
+                else:
+                    print("Enter Valid Input")
+
+        case 2:
+            print(faculty_display)
+            faculty()
+        case 3 :
+            print(student_display)
+            student()
+        case _:
+            print("Enter Valid Input")
 
 
     check = input("Want to Exit (y/n) : ").upper()
@@ -184,4 +136,4 @@ while status:
     elif check == "N":
         status = True
     else:
-        print("Enter Valid Input ")
+        print("Enter Valid Input")

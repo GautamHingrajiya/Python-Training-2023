@@ -1,11 +1,14 @@
-# Write a Python program to calculate surface volume and area of a cylinder
+# Write a Python program to returns sum of all divisors of a number
 
-c_radius = float(input("Enter Radius of Cylinder : "))
-c_height = float(input("Enter Height of Cylinder : "))
+num1= int(input("Enter Number : "))
+sum = 0
 
 
-surfaceArea = 2 * 3.14 * c_radius * (c_radius + c_height) 
-volumeCylinder = 2 * 3.14 * (c_radius**2) * c_height
-
-print("Surface Area of Cylinder : ", surfaceArea)
-print("Volume of Cylinder : ", volumeCylinder)
+if num1 > 0 :
+    for i in range(1,num1+1):
+        if num1 % i == 0:
+            sum += i
+    print("Sum Of All Divisor : ", sum)
+    
+else:
+    print("Sum Of All Divisor : ", sum)

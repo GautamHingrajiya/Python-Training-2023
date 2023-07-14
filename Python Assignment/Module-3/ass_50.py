@@ -1,10 +1,21 @@
-# Write a Python function to check whether a number is in a given range
-def checkinrange():
-    if num1 in range(1,100):
-        print("Enter Number is in Range.")
-    else:
-        print("Enter Number is not in Range.")
+# Write a Python function to check whether a number is perfect or not.
 
+def perfect():
+    global sum
+    if num1 > 0 :
+        for i in range(1,num1):
+            if num1 % i == 0:
+                sum += i
+    return sum    
+    # if sum == num1 :
+    #     print("Entered Number is Perfect Number.")
+    # else:
+    #     print("Entered Number is not Perfect Number.")
 
+sum = 0
 num1 = int(input("Enter Number : "))
-checkinrange()
+perfect()
+if sum == num1 :
+    print("Entered Number is Perfect Number.")
+else:
+    print("Entered Number is not Perfect Number.")

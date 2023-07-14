@@ -1,5 +1,10 @@
-# How can you get a random number in python?
+# How will you set the starting value in generating random numbers?
 
 import random
-r = random.randint(1,100)
-print(r)
+
+# Set the seed value
+random.seed(13)
+
+# Generate random numbers same for seed value 12
+random_number = random.randint(1,100)
+print(random_number)

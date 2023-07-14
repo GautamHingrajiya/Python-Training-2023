@@ -1,8 +1,1 @@
-# How will you randomizes the items of a list in place?
-
-import random
-
-mylist = ["apple", "banana", "cherry"]
-random.shuffle(mylist)
-
-print(mylist)
+# Write a Python program to read a random line from a file.

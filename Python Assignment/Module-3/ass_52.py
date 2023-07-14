@@ -1,14 +1,9 @@
-# Write a Python function that checks whether a passed string is palindrome or not
+# How Many Basic Types Of Functions Are Available In Python?
 
-def palidrome():
+"""
+    there are 2 types of function
 
-    if str1 == str1 [::-1] :
-        print("String is Palindrome")
-    else:
-        print("String is not Palindrome")
+        1) built-in function
+        2) user defined function
 
-
-
-
-str1 = input("Enter String : ")
-palidrome()
+"""

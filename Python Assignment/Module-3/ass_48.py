@@ -1,7 +1,18 @@
-"""
-Write a Python program to create a dictionary from a string.
-Note: Track the count of the letters from the string.
-Sample string: 'w3resource'
-Expected output:
-{'3': 1,’s’: 1, 'r': 2, 'u': 1, 'w': 1, 'c': 1, 'e': 2, 'o': 1}
-"""
+# Write a Python function to calculate the factorial of a number (a nonnegative integer)
+
+def factorial():
+    factorial = 1
+
+    if num > 0:
+        for i in range ( 1, num + 1):
+            factorial = factorial * i
+        print(factorial)
+    elif num < 0:
+        print("factorial does not for negative numbers")
+    else:
+        print("The factorial of 0 is 1")
+
+
+num = int(input("Enter Number You Wnat to Find Factorial : "))
+
+factorial()

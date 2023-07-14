@@ -1,8 +1,4 @@
-# How can you pick a random item from a list or tuple?
-
+# How can you pick a random item from a range?
 import random
-
-t= ("hello","how","are","you")
-
-t1 = random.choice(t)
-print(t1)
+r = random.randint(1,100)
+print(r)

@@ -1,9 +1,8 @@
-# How Many Basic Types Of Functions Are Available In Python?
+# How can you pick a random item from a list or tuple?
 
-"""
-    there are 2 types of function
+import random
 
-        1) built-in function
-        2) user defined function
+t= ("hello","how","are","you")
 
-"""
+t1 = random.choice(t)
+print(t1)

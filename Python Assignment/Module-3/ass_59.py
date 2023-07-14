@@ -1,1 +1,7 @@
-# Write a Python program to read a random line from a file.
+# Write a Python program to convert degree to radian
+
+degree = float(input("Enter Degree : "))
+
+radian = degree * 0.0174533
+
+print("Radian Of Give Degree is : ", radian)

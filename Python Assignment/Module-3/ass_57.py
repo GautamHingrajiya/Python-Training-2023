@@ -1,10 +1,8 @@
-# How will you set the starting value in generating random numbers?
+# How will you randomizes the items of a list in place?
 
 import random
 
-# Set the seed value
-random.seed(13)
+mylist = ["apple", "banana", "cherry"]
+random.shuffle(mylist)
 
-# Generate random numbers same for seed value 12
-random_number = random.randint(1,100)
-print(random_number)
+print(mylist)

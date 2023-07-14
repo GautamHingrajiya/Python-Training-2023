@@ -1,3 +1,5 @@
+import Logic_Kalyan_Jewellers
+
 status=True
 while status:
     cust_name = input("Enter your name : ")
@@ -13,9 +15,11 @@ while status:
     purchase_amt=0
     currentgold_prise = 5752
 
-    purchase_amt = currentgold_prise * product_gram
-    print("currentgold_prise = Rs.5752/gm")
-    print("purchase amt : ",purchase_amt)
+    # purchase_amt = currentgold_prise * product_gram
+    # print("currentgold_prise = Rs.5752/gm")
+    # print("purchase amt : ",purchase_amt)
+    print(Logic_Kalyan_Jewellers.fn_purchase_amt())
+
 
     totalmakingcharges = product_gram * 845
     print("making charges Rs.845/gm")

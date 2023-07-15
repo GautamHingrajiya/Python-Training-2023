@@ -5,14 +5,14 @@ d2 = {'a': 300, 'b': 200, 'd':400}
 combine_dic = {}
 
 
-for key in d2.keys() :
-    if key in d1:
-        combine_dic[key] = d1[key]+d2[key]
+for i in d2.keys() :
+    if i in d1:
+        combine_dic[i] = d1[i]+d2[i]
     else :
-        combine_dic[key] = d2[key]
+        combine_dic[i] = d2[i]
 
-for key in d1.keys() :
-    if key in d2:
-        combine_dic[key] = d1[key]
+for j in d1.keys() :
+    if j not in d2:
+        combine_dic[j] = d1[j]
 
 print(combine_dic)

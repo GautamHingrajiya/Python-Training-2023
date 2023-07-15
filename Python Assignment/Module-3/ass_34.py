@@ -8,9 +8,9 @@ dic1 = {
     "key4":"value4"
 }
 
-key = "key1"
+givenkey = "key5"
 
-if key in dic1:
+if givenkey in dic1:
     print("key exists")
 else:
     print("key does not exists")

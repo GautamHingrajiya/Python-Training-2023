@@ -2,9 +2,11 @@
 
 def revstr(str1):
     if len(str1) % 4 == 0:
-       rstr = str1 [-1::-1]
-       return rstr
+        
+        rstr = str1 [-1::-1]
+        return rstr
     else :
+        
         return str1
     
 

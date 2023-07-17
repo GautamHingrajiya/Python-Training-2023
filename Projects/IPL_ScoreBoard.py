@@ -86,6 +86,7 @@ while status:
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))
                         i+=1
                     elif auto_run =="NO BOWL":
+                        print("*=*=*=*=*=*=*=*=*=*No Ball*=*=*=*=*=*=*=*=*=*")
                         my_score+=1
                         my_wicket+=0
                         print("Score : ", my_score ,"/",my_wicket,"Ball : ",(i/10))

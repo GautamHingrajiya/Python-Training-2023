@@ -41,12 +41,16 @@ def faculty():
 def student():
     pass
 
+student_main = {}
+
 status = True
 while status :
+    
+    student_details = {}
+
     print(welcome)
     role = int(input("Select Role By Entering Role : "))
-    student_main = {}
-    student_details = {}
+    
     match role:
 
         case 1:
@@ -60,20 +64,20 @@ while status :
                     rollno = int(input("Enter Roll No. : "))
 
                     if rollno in student_main:
+                        
                         print("Entered Roll No. Already Exixst ")
+
                     else:
+                        student_main[rollno] = student_details
                         
-                        print("Entered Roll No. not Exixst ")
-                        
-                        
+                        print("Entered Roll No. Available for Registration")
+
                         fname = input("Enter First Name : ").upper()
                         lname = input("Enter Last Name : ").upper()
                         contactno = int(input("Enter Contact No. : "))
-                        facultyname = input("Enter Faculty Name : ").upper()
                         student_details['fname'] = fname
                         student_details['lname'] = lname
                         student_details['contact'] = contactno
-                        student_details['faculty'] = facultyname
 
                         add_subject = True
                         while add_subject:
@@ -82,9 +86,13 @@ while status :
                             student_subject = {}
                             
                             subject = input("Enter Subject Name : ").upper()
+                            student_details['subject'] = student_subject
+
                             marks = int(input("Enter Marks : "))
                             fees = int(input("Enter Fees : "))
 
+                            student_marks['marks'] = marks
+                            student_marks ['fees'] = fees
                             
                             
                             check = input("Add More Subject (y/n) : ").upper()
@@ -95,12 +103,11 @@ while status :
                             else:
                                 print("Enter Valid Input")
 
-                        student_marks['marks'] = marks
-                        student_marks ['fees'] = fees
+                        
                         student_subject [subject] = student_marks
-                        student_details['subject'] = student_subject
-                        student_main[rollno] = student_details
 
+                        facultyname = input("Enter Faculty Name : ").upper()
+                        student_details['faculty'] = facultyname
                     
                     print(student_main)
                 elif counsellor_role == 2:

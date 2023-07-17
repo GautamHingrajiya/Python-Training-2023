@@ -1,131 +1,153 @@
-Welcome_Display = """                           
-                    WELCOME TO FRUIT MARKET
+welcome = """
+                                                WELCOME TO STUDENT MANAGEMENT SYSTEM
 
-                        1) Manager
-                        2) Customer
+                                                1) COUNSELLOR
 
+                                                2) FACULTY
+
+                                                3) STUDENT
 """
-Manager_Display = """
-                    WELCOME MANAGER 
 
-                    1) Add Fruit Stock
-                    2) Viwe Fruit Stock
-                    3) Update Fruit Stock
-"""                                             # Manager Welcome and Role Selection Message
+counsellor_display = """
 
-product = {}
-shopping_product = {}
-total_bill = 0
+                                                WELCOME COUNSELLOR
 
-status = True                               
+                                                1) ADD STUDENT
+
+                                                2) REMOVE STUDENT
+
+                                                3) VIWE ALL STUDENT
+
+                                                4) VIWE SPECIFIC STUDEN
+"""
+
+faculty_display = """
+
+                                                WELCOME FACULTY
+
+                                                1) ADD MARKS TO STUDENT
+
+                                                2) VIWE ALL STUDENT
+"""
+
+student_display = """
+
+                                                WELCOME STUDENT
+"""
+def fn_counsellor():
+
+    
+    
+    
+
+    c_status = True
+    while c_status:
+        student_main = {}
+        student_details = {}
+        student_subject = {}
+        
+        rollno = int(input("Enter Roll No. : "))
+
+        if rollno in student_main:
+            print("Roll No. Already Exist")
+        else:
+            print("\nEntered Roll No. Available for Registration\n")
+            fname = input("Enter First Name : ").upper()
+            lname = input("Enter Last Name : ").upper()
+            contactno = int(input("Enter Contact No. : "))
+            facultyname = input("Enter Faculty Name : ").upper()
+
+            student_details['fname'] = fname
+            student_details['lname'] = lname
+            student_details['contact'] = contactno
+            student_details['faculty'] = facultyname
+            student_main[rollno]=student_details
+            
+            c_sub = True
+            while c_sub:
+                
+                student_marks = {}
+
+                subject = input("Enter Subject Name : ").upper()
+                marks = int(input("Enter Marks : "))
+                fees = int(input("Enter Fees : "))
+
+                student_marks['marks'] = marks
+                student_marks ['fees'] = fees
+                
+                
+
+
+
+                check = input("Want More subject (y/n) : ").upper()
+                if check == "N" :
+                    c_sub = False
+                elif check == "Y" :
+                    c_sub = True
+                else:
+                    print("Enter Valid Input")
+
+            student_details['subject'] = student_subject
+            student_subject[subject]=student_marks
+
+            print("\n")
+            print(student_main)
+
+
+
+
+
+        check = input("Want More Operation (y/n) : ").upper()
+        if check == "N" :
+            status = False
+        elif check == "Y" :
+            status = True
+        else:
+            print("Enter Valid Input")
+            input()
+    
+
+def fn_faculty():
+    pass
+
+def fn_student():
+    pass
+
+status = True
 while status:
-    print(Welcome_Display)                          # Printing Welcome Message 
-    role = int(input("Select your Role (1/2) : "))          # Taking User Role 
     
-    if role == 1 : # if select 1.manager role        
-        
-        print(Manager_Display)
-        m_role = int(input("Select Operation Want to Perform : "))
-        
-        if m_role == 1:     # if select 1.Add Fruit Stock
-            m_status = True
-            while m_status:
-                sub_dic = {}
-                product_name = input("Enter product name : ")
-                qty = int(input("Enter product qty : "))
-                price = int(input("Enter product price : "))
-
-                if product_name in product :
-                    old_qty = product[product_name]['qty']
-                    sub_dic['qty'] = qty + old_qty
-                    sub_dic['price'] = price
-                else:
-                    sub_dic['qty'] = qty
-                    sub_dic['price'] = price
-                product[product_name]=sub_dic
-                
-                check = input("Do you want add more items ? (y/n) : ").upper()
-                if check == "Y" or check == "YES":
-                    m_status = True
-                else:
-                    m_status = False                   
-                                
-        elif m_role == 2:
-                print("\n  ============  Current Stock  ============  \n")
-                for k,v in product.items():
-                    print(f"{k}   Qty= {v['qty']}  Rs. {v['price']} ")
-        elif m_role == 3:
-                
-                u_status = True
-                while u_status :
-                    update_product_name = input("Enter Product Name")
-                    update_product_qty = int(input("Enter update qty"))
-                    update_product_price = int(input("Enter update price"))
-                    
-                    if product_name in product :
-                        sub_dic['qty'] = update_product_qty
-                        sub_dic['price'] = update_product_price
-                    else:
-                        print("Plese add First Item")
-
-                    check = input("Do you want add more items ? (y/n) : ").upper()
-                    if check == "Y" or check == "YES":
-                        u_status = True
-                    else:
-                        u_status = False  
-                    
-    elif role ==2 :
-
-        print("          Welcome Customer          ")
-        c_status = True
-        while c_status:
-
-            print("  ============  MENU  ============  ")
-            for k,v in product.items():
-                print(f"{k}   Max Order Qty= {v['qty']}  Rs. {v['price']} ")
-            
-            
-            product_name = input("Item Want to Oreder : ").lower()
-            order_qty =  int(input("Enter Item Want to Qty : "))
-            
-            sub_shop={}
-            shopping_product[product_name] = sub_shop
-
-            if product_name in product:
-
-                if order_qty <= product[product_name]['qty'] :
-                    
-                    bill_amt = order_qty * product[product_name]['price']
-                    print("Item Total : ",bill_amt)
-                    
-                    total_bill += bill_amt
-                    
-                    product[product_name]['qty'] -= order_qty  
-                    sub_shop['qty'] = order_qty
-                    sub_shop['price'] = bill_amt
-                    shopping_product[product_name]=sub_shop
-
-                else :
-                    print("You can't Order More then Max Order Qty")
-
-            else:
-                print("Enter Valid Item Name")
-            
-            check = input("Do you want add more items ? (y/n) : ").upper()
-            if check == "Y" or check == "YES":
-                c_status = True
-            else:
-                c_status = False  
-                    
-            print("\n  ============  Order Summery  ============  \n")
-            for k,v in shopping_product.items():
-                print(f"{k}   Qty= {v['qty']}  Rs. {v['price']} ")
-            print("TOTAL BILL AMT : ",total_bill)
-    else:
-        print("Enter Valid Input")    
+    print(welcome)
     
-    check = input("Do you want to continue ? (y/n) : ").upper()
-    if check == "Y" or check == "YES":
+    role = int(input("Select Roll : "))
+
+    match role:
+
+        case 1 :
+            print(counsellor_display)
+            c_role = int(input("Select Operation : "))
+            fn_counsellor()
+
+
+        case 2 :
+            print(faculty_display)
+            f_role = int(input("Select Operation : "))
+            fn_faculty()
+
+        case 3 :
+            print(student_display)
+            fn_student()
+
+
+        case _ :
+            print("Enter Valid Input")
+
+
+
+    check = input("Want to Exit (y/n) : ").upper()
+    if check == "N" :
         status = True
+    elif check == "Y" :
+        status = False
     else:
-        status =False
+        print("Enter Valid Input")
+        input()

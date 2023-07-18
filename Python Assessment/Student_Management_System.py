@@ -63,53 +63,49 @@ while status :
 
                     rollno = int(input("Enter Roll No. : "))
 
-                    if rollno in student_main:
-                        
-                        print("Entered Roll No. Already Exixst ")
-
+                    if rollno in student_main :
+                        print("Roll No. Already Exist")
+                
                     else:
-                        student_main[rollno] = student_details
-                        
-                        print("Entered Roll No. Available for Registration")
+                        student_subject = {}
+
+                        print("Roll No. Available for Register ")
 
                         fname = input("Enter First Name : ").upper()
                         lname = input("Enter Last Name : ").upper()
-                        contactno = int(input("Enter Contact No. : "))
+                        contact = int(input("Enter Contact No. : "))
                         student_details['fname'] = fname
                         student_details['lname'] = lname
-                        student_details['contact'] = contactno
-
+                        student_details['contact'] = contact
+                        
                         add_subject = True
                         while add_subject:
-
-                            student_marks = {}
-                            student_subject = {}
                             
-                            subject = input("Enter Subject Name : ").upper()
-                            student_details['subject'] = student_subject
+                            student_marks={}
 
+                            subject = input("Enter Subject Name : ").upper()
                             marks = int(input("Enter Marks : "))
                             fees = int(input("Enter Fees : "))
-
+                            
                             student_marks['marks'] = marks
-                            student_marks ['fees'] = fees
+                            student_marks['fees'] = fees
                             
-                            
-                            check = input("Add More Subject (y/n) : ").upper()
+                            student_subject[subject]=student_marks
+                            student_details['subject'] = student_subject
+
+                            check = input("Add More Subjects (y/n) : ").upper()
                             if check == "Y":
                                 add_subject = True
                             elif check == "N":
                                 add_subject = False
                             else:
                                 print("Enter Valid Input")
-
-                        
-                        student_subject [subject] = student_marks
-
-                        facultyname = input("Enter Faculty Name : ").upper()
-                        student_details['faculty'] = facultyname
-                    
-                    print(student_main)
+                                
+                        faculty = input("Enter Faculty Name : ").upper()
+                        student_details['faculty'] = faculty
+                                
+                        student_main[rollno] = student_details
+                        print("Student Registration Succsefully Completed :)")
                 elif counsellor_role == 2:
                     pass
                 elif counsellor_role == 3:

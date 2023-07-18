@@ -82,6 +82,8 @@ def fn_counselloer():
                     print("Please Confirm Details Before Delete")
                     Viwedata = student_main.get(rollno)
                     print(Viwedata)
+
+                    
                     
                 
                 else:

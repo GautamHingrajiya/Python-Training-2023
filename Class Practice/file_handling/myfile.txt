@@ -1,3 +1,0 @@
-hello
-welcome to file handling concept
-most popular programing language

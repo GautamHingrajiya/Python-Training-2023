@@ -1,6 +1,7 @@
 f = open("myfile_example1.txt","w")
-para = "hello welcome to python programing"
+para = [10,20,30,40,50,60]
+a= str(para)
 
-f.write(para)
+f.write(a)
 
 f.close()

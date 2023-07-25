@@ -11,11 +11,12 @@ counsellor_display = """
 
                                                 4) VIWE SPECIFIC STUDEN
 """
-
+global student_main
 
 def fn_counselloer():
 
     student_main = {}
+    
     
     counsellor_status = True
     while counsellor_status : 

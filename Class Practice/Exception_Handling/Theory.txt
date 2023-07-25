@@ -1,0 +1,19 @@
+Exception : which Disturb the normal flow of the program 
+        =>  using of  Exception our program Terminate att Middle of Executation.   
+
+
+Exception Handling : to Handle This Kind of Exception its called Exception Handling
+
+                =>  Exception Handling is Possible with try and except block
+
+        syntax : 
+
+        try : 
+            Exception Error block
+
+        except :
+            after Exception Handling code
+            
+                    or
+            Exception Message
+            

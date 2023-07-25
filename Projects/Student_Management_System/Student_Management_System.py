@@ -19,15 +19,17 @@ while status :
     
     match role:
 
-        case 1:            
+        case 1:         
+            # print(counsellor_logic.counsellor_display)
             counsellor_logic.fn_counselloer()
 
         case 2:
+            # print(faculty_logic.counsellor_display)
             faculty_logic.fn_faculty()
 
         case 3 :            
-            student_logic.fn_studdent()
-
+            # print(student_logic.counsellor_display)
+            student_logic.fn_student         
         case _:
             print("Enter Valid Input")
 

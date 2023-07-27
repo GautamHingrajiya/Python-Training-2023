@@ -4,20 +4,17 @@ OPPS : Object Oriented Programing system or structure.
 
         Class : Class is a Collection of Data Member and Member Function
 
-        Classs Which is Contain Dtata Member and Member Function in Single Entity
+        Classs Which is Contain Data Member and Member Function in Single Entity
 
         Classs Which is Behave like Group Of Elements
 
         we can Store Similar and dis-similar data Elements in Class  
 
-
         Class Syntax:
 
             class < Class Name >:
                 data Member
-                Membeer Funcction
-
-        
+                Membeer Funcction     
 
 Object : Object is an Instance or Variable of Class 
 
@@ -26,14 +23,10 @@ Object : Object is an Instance or Variable of Class
          Syntax:
 
          odjname : classname()
-
-         
-
-
 """
 
 
-class Student:
+class Student():
     id = 1              # Data Members
     name = "Gautam"
     subject = "Python"

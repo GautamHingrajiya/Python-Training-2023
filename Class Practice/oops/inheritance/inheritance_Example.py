@@ -7,8 +7,8 @@ class A:
         print(self.num2)
 
 class B:
-    num3 = 10
-    num4 = 20
+    num3 = 30
+    num4 = 40
     
     def displayB(self):
         print(self.num3)

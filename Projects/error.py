@@ -1,16 +1,12 @@
-def sum_of_divisors(number):
-    if number <= 0:
-        return 0
+# import the modules
+import instagram_explore as ie
+import json
 
-    divisors_sum = 0
+# search user name
+result = ie.user('timesofindia')
 
-    for i in range(1, number + 1):
-        if number % i == 0:
-            divisors_sum += i
+parsed_data= json.dumps(result, indent = 4,
+						sort_keys = True)
 
-    return divisors_sum
-
-# Example usage
-num = 6
-divisors_sum = sum_of_divisors(num)
-print("Sum of divisors of", num, "is", divisors_sum)
+# displaying the data
+print(parsed_data[15:400])

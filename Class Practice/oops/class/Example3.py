@@ -1,4 +1,4 @@
-# self : sel is a keyword which is represent current class properties
+# self : self is a keyword which is represent current class properties
 
 class student:
     def input(self,fname,subject):

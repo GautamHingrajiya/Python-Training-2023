@@ -1,0 +1,1 @@
+# What is a QuerySet?Write program to create a new Post object in database:

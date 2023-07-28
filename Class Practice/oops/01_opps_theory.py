@@ -26,7 +26,7 @@ Object : Object is an Instance or Variable of Class
 """
 
 
-class Student():
+class Student:
     id = 1              # Data Members
     name = "Gautam"
     subject = "Python"

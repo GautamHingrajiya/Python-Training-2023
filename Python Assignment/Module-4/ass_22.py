@@ -1,0 +1,1 @@
+# How to Define a Class in Python? What Is Self? Give An Example Of A Python Class

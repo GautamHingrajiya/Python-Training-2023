@@ -1,0 +1,12 @@
+Name 	:	GAUTAM
+Score 	:	25
+Name 	:	RIDDHI
+Score 	:	24
+Name 	:	GAUTAM
+Score 	:	100
+Name 	:	RIDDHI
+Score 	:	98
+Name : GAUTAMScore : 50
+Name : RIDDHIScore : 49
+Name : A	Score : 99
+Name : B	Score : 100

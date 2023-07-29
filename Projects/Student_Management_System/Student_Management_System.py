@@ -1,4 +1,4 @@
-from packages import counsellor_logic,faculty_logic,student_logic
+import counsellor_logic,faculty_logic,student_logic
 
 
 welcome = """

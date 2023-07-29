@@ -1,0 +1,26 @@
+Name : A	Score : 100
+Name : B	Score : 99
+Name : C	Score : 98
+Name : D	Score : 97
+Name : E	Score : 96
+Name : F	Score : 95
+Name : G	Score : 94
+Name : H	Score : 93
+Name : I	Score : 92
+Name : J	Score : 91
+Name : K	Score : 90
+Name : L	Score : 89
+Name : M	Score : 88
+Name : N	Score : 87
+Name : O	Score : 86
+Name : P	Score : 85
+Name : Q	Score : 84
+Name : R	Score : 83
+Name : S	Score : 82
+Name : T	Score : 81
+Python
+Java
+React Js
+Node Js
+Andriod
+Html

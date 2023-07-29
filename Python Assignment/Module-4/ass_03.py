@@ -2,7 +2,7 @@
 
 file = open("NewFile.txt","a")
 
-for i in range(0,2):
+for i in range(0,5):
     name = input("\nEnter Name : ").upper()
     score = int(input("\nEnter Marks : "))
     file.write("\nName : "+name+"\t")

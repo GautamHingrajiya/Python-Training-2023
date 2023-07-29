@@ -11,12 +11,12 @@ counsellor_display = """
 
                                                 4) VIWE SPECIFIC STUDEN
 """
-global student_main
+student_main = {}
+global student_subject
+global student_marks
+global student_details
 
 def fn_counselloer():
-
-    student_main = {}
-    
     
     counsellor_status = True
     while counsellor_status : 
@@ -73,6 +73,7 @@ def fn_counselloer():
                             
                     student_main[rollno] = student_details
                     print("Student Registration Succsefully Completed :)")
+                    print(student_main)
                     
 
             case 2 :
@@ -83,9 +84,9 @@ def fn_counselloer():
                     print("Please Confirm Details Before Delete")
                     Viwedata = student_main.get(rollno)
                     print(Viwedata)
-
-                    
-                    
+                    student_main.pop(rollno)
+                    input()
+                    print("Student Remove Successfully")
                 
                 else:
                     print("Roll No. Does Not Exist")

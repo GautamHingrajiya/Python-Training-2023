@@ -1,17 +1,10 @@
-# from .counsellor_logic import counsellor_display
-# from .counsellor_logic import fn_counselloer
-# from .counsellor_logic import *
-
-from counsellor_logic import student_main 
-
+from counsellor_logic import *
 
 student_display = """
 
                                                 WELCOME STUDENT
 """
 
-# global student_main
-# print("====>>> counsellor display ",counsellor_display)
 def fn_student():
 
     rollno = int(input("Enter Roll No. : "  ))
@@ -20,6 +13,6 @@ def fn_student():
                     
         Viwedata = student_main.get(rollno)
         print(Viwedata)
-                
+
     else:
             print("Roll No. Does Not Exist")

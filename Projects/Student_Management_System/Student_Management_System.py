@@ -1,5 +1,6 @@
-import counsellor_logic,faculty_logic,student_logic
-
+from counsellor_logic import *
+from faculty_logic import *
+from student_logic import * 
 
 welcome = """
                                                 WELCOME TO STUDENT MANAGEMENT SYSTEM
@@ -20,16 +21,16 @@ while status :
     match role:
 
         case 1:         
-            # print(counsellor_logic.counsellor_display)
-            counsellor_logic.fn_counselloer()
+            print(counsellor_display)
+            fn_counselloer()
 
         case 2:
-            # print(faculty_logic.counsellor_display)
-            faculty_logic.fn_faculty()
+            print(faculty_display)
+            fn_faculty()
 
-        case 3 :            
-            # print(student_logic.counsellor_display)
-            student_logic.fn_student         
+        case 3 :
+            print(student_display)  
+            fn_student()
         case _:
             print("Enter Valid Input")
 

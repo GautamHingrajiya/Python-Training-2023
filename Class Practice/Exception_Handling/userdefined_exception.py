@@ -8,5 +8,6 @@ try:
         print("Even Number")
     else :
         raise checkodddata()
+
 except : 
     print("Odd Number Entered ")

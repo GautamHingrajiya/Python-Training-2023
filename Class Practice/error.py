@@ -1,2 +1,1 @@
-print("Hello" , end= " ")
-print("Welcome to Python")
+print(10*20)

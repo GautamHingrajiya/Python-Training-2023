@@ -1,0 +1,18 @@
+	 * * *  WELCOME CUSTOMER  * * * 
+ Bill No : 913
+ Customer Name : GAUTAM
+ Customer Number : 123
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Product 			 Qty 		 price
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Bath Shop 			 1 		 40
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ Cosmetic Tax 			 2.0 Rs.
+ Grocery Tax 			 0.0 Rs.
+ Others Tax 			 0.0 Rs.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		 Total Bill : 	40.0 
+
+= = = = = = = = = = = Thank You = = = = = = = = = = =

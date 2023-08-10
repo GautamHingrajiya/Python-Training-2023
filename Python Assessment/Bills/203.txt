@@ -1,0 +1,20 @@
+	 * * *  WELCOME CUSTOMER  * * * 
+ Bill No : 203
+ Customer Name : gautam
+ Customer Number : 9586035263
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Product 			 Qty 		 price
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Bath Shop 			 1 		 40
+ Bath Shop 			 2 		 240
+ Bath Shop 			 4 		 80
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ Cosmetic Tax 			 2.0 Rs.
+ Grocery Tax 			 12.0 Rs.
+ Others Tax 			 4.0 Rs.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		 Total Bill : 	388.0 
+
+= = = = = = = = = = = Thank You = = = = = = = = = = =

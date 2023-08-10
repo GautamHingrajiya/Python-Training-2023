@@ -1,0 +1,24 @@
+	 * * *  WELCOME CUSTOMER  * * * 
+ Bill No : 31999
+ Customer Name : asd
+ Customer Number : dfads
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Product 			 Qty 		 price
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Bath Shop 			 1 		 40
+ Bath Shop 			 02 		 400
+ Bath Shop 			 3 		 540
+ Bath Shop 			 4 		 400
+ Bath Shop 			 6 		 300
+ Bath Shop 			 9 		 360
+ Bath Shop 			 7 		 140
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ Cosmetic Tax 			 69.0 Rs.
+ Grocery Tax 			 15.0 Rs.
+ Others Tax 			 25.0 Rs.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		 Total Bill : 	2235.0 
+
+= = = = = = = = = = = Thank You = = = = = = = = = = =

@@ -6,7 +6,7 @@ from django.shortcuts import render
 #     return render(request , "index.html") 
 
 def logIn(request):
-    return render(request , "jobs.html") 
+    return render(request , "tut13.html") 
 
 
 def aboutUs(request):
